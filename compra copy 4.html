@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra </title>
+    <link rel="stylesheet" href="estilos/estilos compra.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagen/logo1.png" alt="Logo">
+            <span>INNOVATEX</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:3000/final.html">Inicio</a></li>
+                <li><a href="http://127.0.0.1:3000/recomendaciones.html">Recomendaciones</a></li>
+                <li><a href="http://127.0.0.1:3000/servicios.html">Servicios</a></li>
+                <li><a href="http://127.0.0.1:3000/contactos.html">Contacto</a></li>
+                <li><a href="http://127.0.0.1:3000/preguntas.html">preguntas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="producto">
+        <div class="imagen">
+            <img src="imagen/procesador1.png" alt="grafica">
+        </div>
+        <div class="descripcion">
+            <h1>Intel Core i3-14100</h1>
+            <h2>Descripcion</h2>
+            <p>Arquitectura: Basado en la arquitectura Alder Lake (12ª generación de Intel).<br><br>
+
+                Núcleos y hilos:<br>
+
+                Núcleos: 4 núcleos físicos.
+                Hilos: 8 hilos gracias a la tecnología Hyper-Threading de Intel.<br>
+                Frecuencia base: 2.0 GHz.
+
+                Frecuencia turbo máxima: 4.3 GHz.<br><br>
+
+                Caché:<br><br>
+
+                Caché L3: 12 MB.<br>
+                Caché L2: 1 MB (256 KB por núcleo).<br><br>
+                Tecnología de fabricación: Intel 7 (anteriormente conocido como 10nm Enhanced SuperFin).<br><br>
+
+                Consumo energético (TDP): 58 W, lo que indica una eficiencia energética bastante buena para tareas
+                cotidianas.<br><br>
+
+                Gráficos integrados: Intel UHD Graphics 730, basada en la arquitectura Intel Xe.</p>
+        </div>
+        <aside class="comprar">
+            <h2>TOTAL DEL PRODUCTO</h2>
+            <h3>precio:</h3>
+            <div class="precio">S/ 549</div>
+            <h3>Métodos de Pago</h3>
+            <form>
+                <input type="radio" id="tarjeta" name="pago" value="tarjeta">
+                <label for="rojo">tarjeta de credito &#128179;</label><br>
+                <input type="radio" id="efectivo" name="pago" value="efectivo">
+                <label for="azul">pago en efectivo &#128181;</label><br>
+            </form>
+            <button class="boton"><a href="http://127.0.0.1:3000/pagos.html"> ¡¡COMPRAR!!</a></button>
+        </aside>
+    </div>
+    <hr>
+<div class="producto">
+    <h2><u>Otros productos puedas adquirir</u></h2>
+</div>
+<section class="categorias-principales">
+    <div class="categoria-cuadro">
+        <img src="imagen/ram2.png" alt="Memoria Ram HP DDR4 8GB">
+        <h2>Memoria Ram HP DDR4 8GB</h2>
+        <p class="precio">S/ 117</p>
+        <button onclick="window.location.href='compra copy 13.html'">Comprar</button>
+    </div>
+    <div class="categoria-cuadro">
+        <img src="imagen/procesador2.png" alt="Intel Core i5-11400F">
+        <h2>Intel Core i5-11400F</h2>
+        <p class="precio">S/ 179</p>
+        <button onclick="window.location.href='compra copy 5.html'">Comprar</button>
+    </div>
+    <div class="categoria-cuadro">
+        <img src="imagen/procesador4.png" alt="AMD Ryzen 7 5700G">
+        <h2>AMD Ryzen 7 5700G</h2>
+        <p class="precio">S/ 610</p>
+        <button onclick="window.location.href='compra copy 7.html'">Comprar</button>
+    </div>
+    <div class="categoria-cuadro">
+        <img src="imagen/espacio3.png" alt="SSD Adata Su630 240GB">
+        <h2>SSD Adata Su630 240GB</h2>
+        <p class="precio">S/ 100</p>
+        <button onclick="window.location.href='compra copy 10.html'">Comprar</button>
+    </div>
+</section>
+    <footer>
+        <div class="footer">
+            <div class="contact">
+                <h3>Contacto</h3>
+                <p>Email: INNOVATEX987@gmail.com</p>
+                <p>Teléfono: +51 985 263 517</p>
+                <p>Dirección: calle los manzanos 123, Lima, Perú</p>
+            </div>
+            <div class="redes">
+                <h3>Síguenos</h3>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+
+    </footer>
+
+<script>
+    document.querySelector('.boton').onclick = function(e) {
+        e.preventDefault();
+        const tarjeta = document.getElementById('tarjeta').checked;
+        const efectivo = document.getElementById('efectivo').checked;
+        if (tarjeta) {
+            window.location.href = "pagos.html";
+        } else if (efectivo) {
+            window.location.href = "venta.html";
+        } else {
+            alert("Por favor, selecciona un método de pago.");
+        }
+    };
+</script>
+
+
+
+</body>
+
+</html>

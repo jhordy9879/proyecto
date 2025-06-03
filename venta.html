@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias por su compra</title>
+    <link rel="stylesheet" href="estilos/estilos venta.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagen/logo1.png" alt="Logo">
+            <span>INNOVATEX</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:3000/final.html">Inicio</a></li>
+                <li><a href="http://127.0.0.1:3000/recomendaciones.html">Recomendaciones</a></li>
+                <li><a href="http://127.0.0.1:3000/servicios.html">Servicios</a></li>
+                <li><a href="http://127.0.0.1:3000/contactos.html">Contacto</a></li>
+                <li><a href="http://127.0.0.1:3000/preguntas.html">preguntas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="cuadro">
+    <div class="agradecimiento">
+        <h1>¡Gracias por realizar su compra!</h1>
+        <p>Se le va a llegar un correo electronico a su bandeja de envio en el cual <br>
+        le llegara la informacion de como llegara su pedido y el tiempo que tardara<br>
+        ¡¡GRACIAS POR COMPRAR EN NUESTRA PAGINA!!
+     </p>
+    </div>
+</section>
+<div style="width:100%;display:flex;justify-content:center;margin:30px 0;">
+    <button onclick="window.location.href='final.html'" class="btn-retorno">
+        <span class="texto-inicio">&larr; Volver a la página principal</span>
+    </button>
+</div>
+
+<!-- Modal de compra realizada -->
+<div id="modal-compra" class="modal">
+    <div class="modal-contenido">
+        <img src="https://cdn-icons-png.flaticon.com/512/845/845646.png" alt="Compra realizada" class="modal-img">
+        <h2>¡Compra realizada!</h2>
+        <button id="cerrar-modal" class="cerrar-btn">Aceptar</button>
+    </div>
+</div>
+<script>
+    // Mostrar el modal al cargar la página
+    window.onload = function() {
+        document.getElementById('modal-compra').style.display = 'flex';
+    };
+    // Cerrar el modal al hacer clic en el botón
+    document.getElementById('cerrar-modal').onclick = function() {
+        document.getElementById('modal-compra').style.display = 'none';
+    };
+</script>
+
+
+</body>
+</html>
+
+

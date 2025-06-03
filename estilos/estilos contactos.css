@@ -1,0 +1,173 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(https://img.lovepik.com/background/20211021/large/lovepik-gorgeous-technology-wallpaper-background-image_500567322.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 20px 20px;
+    color: #fff;
+    background-image: url(fonfo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 80px;
+    margin-right: 10px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 1s linear;
+    transition: font-size 1s ease;
+}
+nav ul li a:hover {
+    color: gray;
+    text-decoration: underline;
+    font-size: 23px;
+}
+.titulo{
+    background-color:blueviolet;
+    color: white;
+    margin-top: 10px;
+    margin-inline: 30px;
+    padding: 1px;
+    border-bottom: 5PX solid black;
+    padding-left: 50px;
+}
+.contacto{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+.escribe{
+    background: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin-top: 40px;
+}
+form input, form textarea {
+    padding-top: 6px;
+    padding-right: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+button {
+    background-color:royalblue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 1s linear;
+    margin-left: 90px;
+    padding-inline: 30px;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+button:hover {
+    background-color: #0056b3;
+    color:gray;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(fonfo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.contact, .redes{
+    flex: 1;
+}
+
+.contact h3, .redes h3 {
+    margin-top: 0;
+}
+
+.redes a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.redes a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 10px 20px 10px;
+    }
+    .logo {
+        margin-bottom: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .logo img {
+        height: 60px;
+        margin-right: 8px;
+    }
+    .logo span {
+        font-size: 28px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+    nav ul li {
+        margin: 10px 0 0 0;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+}

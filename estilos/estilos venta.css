@@ -1,0 +1,215 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(https://img.lovepik.com/background/20211021/large/lovepik-gorgeous-technology-wallpaper-background-image_500567322.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.cuadro {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.agradecimiento {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #cccccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    padding-bottom: 20px;
+    background-image: url(fonfo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 80px;
+    margin-right: 10px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 1s linear;
+    transition: font-size 1s ease;
+}
+nav ul li a:hover {
+    color: #ccc;
+    text-decoration: underline;
+    font-size: 23px;
+}
+img{
+    width: 90%;
+    transition: transform 1s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+
+/* Modal de compra realizada */
+.modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.modal-contenido {
+    background: #fff;
+    padding: 30px 100px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    animation: scaleIn 0.5s;
+}
+@keyframes scaleIn {
+    from { transform: scale(0.7);}
+    to { transform: scale(1);}
+}
+.modal-img {
+    width: 70px;
+    margin-bottom: 15px;
+}
+.cerrar-btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background: #1a237e;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.cerrar-btn:hover {
+    background: #3949ab;
+}
+
+
+.footer-retorno {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0 10px 0;
+    background-image: url('fonfo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.btn-retorno {
+    background: rgb(45, 45, 141);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+}
+
+.btn-retorno:hover {
+    background: rgba(57,73,171,0.9);
+}
+
+
+.btn-retorno:hover .logo-footer {
+    transform: scale(1.2);
+}
+
+.texto-inicio {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+    text-shadow: 1px 1px 4px #222;
+}
+
+@media (max-width: 750px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start; /* Alinea a la izquierda */
+        padding: 10px 10px 20px 10px;
+    }
+    .logo {
+        margin-bottom: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .logo img {
+        height: 60px;
+        margin-right: 8px;
+    }
+    .logo span {
+        font-size: 28px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+    nav ul li {
+        margin: 10px 0 0 0;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+}
+

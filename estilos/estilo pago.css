@@ -1,0 +1,149 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(https://img.lovepik.com/background/20211021/large/lovepik-gorgeous-technology-wallpaper-background-image_500567322.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.formulario{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100ph;
+    margin: 30px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    padding-bottom: 20px;
+    background-image: url(fonfo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 80px;
+    margin-right: 10px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 1s linear;
+    transition: font-size 1s ease;
+}
+nav ul li a:hover {
+    color: gray;
+    text-decoration: underline;
+    font-size: 23px;
+}
+.pago {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+.pago h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+.cuadro{
+    margin-bottom: 15px;
+}
+.cuadro label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+.cuadro input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.boton {
+    width: 100%;
+    padding: 10px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.boton a{
+    color: white;
+    text-decoration: none;
+}
+.boton:hover {
+    background-color: purple;
+}
+
+@media (max-width: 750px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start; /* Alinea a la izquierda */
+        padding: 10px 10px 20px 10px;
+    }
+    .logo {
+        margin-bottom: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .logo img {
+        height: 60px;
+        margin-right: 8px;
+    }
+    .logo span {
+        font-size: 28px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+    nav ul li {
+        margin: 10px 0 0 0;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+}

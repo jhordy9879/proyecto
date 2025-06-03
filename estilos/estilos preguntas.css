@@ -1,0 +1,164 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(https://img.lovepik.com/background/20211021/large/lovepik-gorgeous-technology-wallpaper-background-image_500567322.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-weight: bold;
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    padding-bottom: 20px;
+    background-image: url(fonfo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 80px;
+    margin-right: 10px;
+    width: 90%;
+    transition: transform 1s ease;
+}
+.logo img:hover{
+    transform: scale(1.1);
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 1s linear;
+    transition: font-size 1s ease;
+}
+nav ul li a:hover {
+    color: #ccc;
+    text-decoration: underline;
+    font-size: 23px;
+}
+#titulo{
+    text-align: center;
+    margin-inline: 100px;
+    margin-top: 30px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-image: url(https://freelance-aid.com/wp-content/uploads/2022/09/AdobeStock_169201525-scaled.jpeg);
+    background-attachment:scroll;
+    color: white;
+    margin-bottom: 40px;
+}
+.preguntas{
+    display: flex;
+    padding-inline: 150px;
+}
+.left {
+    margin-right: 60px;
+}
+.left b {
+    font-size:20px ;
+}
+
+.right b{
+    font-size: 20px;
+
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(fonfo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.contact, .redes {
+    flex: 1;
+}
+
+.contact h3, .redes h3 {
+    margin-top: 0;
+}
+
+.redes a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.redes a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start; /* Alinea a la izquierda */
+        padding: 10px 10px 20px 10px;
+    }
+    .logo {
+        margin-bottom: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .logo img {
+        height: 60px;
+        margin-right: 8px;
+    }
+    .logo span {
+        font-size: 28px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+    nav ul li {
+        margin: 10px 0 0 0;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+}
+
